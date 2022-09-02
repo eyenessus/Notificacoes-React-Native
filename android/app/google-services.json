@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461618154501",
+    "project_id": "emersonnotificacao",
+    "storage_bucket": "emersonnotificacao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461618154501:android:e033e26430b5566599e06c",
+        "android_client_info": {
+          "package_name": "com.notificacoes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461618154501-1ddaukrubgvsbi8h05437t4m46cmgt9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2KT1oOwtlraj4850Tf7EWVAF-J-3LjEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461618154501-1ddaukrubgvsbi8h05437t4m46cmgt9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
