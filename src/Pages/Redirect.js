@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
   import {View, StyleSheet, TouchableOpacity, Text} from 'react-native'
-  import {notificationManager} from './src/notification'
+  import { notificationManager } from '../Notification'
 
   export default class Redirect extends Component {
    

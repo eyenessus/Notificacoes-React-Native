@@ -6,7 +6,7 @@ import React, {Component} from 'react'
   import Redirect from './src/Pages/Redirect'
 
   //notificacao
-  import {notificationManager} from './src/notification'
+  import { notificationManager } from '../Notification'
   
   //navegacao
   import {NavigationConteiner} from '@react-navigation/native'

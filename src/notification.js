@@ -1,7 +1,7 @@
-              
+
   import PushNotification from "react-native-push-notification"
               
-  class notification {
+  class Notification {
 
       // Configuração orientada pela documentação do React Native Push Notification
       // Essa configuração garante o funcionamento da biblioteca no Android e no iOS
@@ -83,5 +83,5 @@
 
   }
 
-  export const notificationManager = new notification();
+  export const notificationManager = new Notification();
               
