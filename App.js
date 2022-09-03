@@ -21,46 +21,41 @@ export default class App extends Component {
     super(props);
   }
 
-
   componentDidMount() {
     localNotify.configure();
-    localNotify.createChannel();
-    localNotify.buildNotificationSchedule();
+    localNotify.creatChannel();
+    localNotify.construirnotificacaoagendada();
   }
 
   onPressSendNotification = () => {
     localNotify.showNotification(
       1,
-      "Esse é o nosso título",
-      "E aqui está a mensagem. Vamos inserir uma mensagem um pouco mais longa para vermos o Android irá se adaptar ao conteúdo na tela?",
+      'Esse é o nosso título',
+      'E aqui está a mensagem. Vamos inserir uma mensagem um pouco mais longa para vermos o Android irá se adaptar ao conteúdo na tela?',
       {}, // data
-      {} // options
-    )
-  }
+      {}, // options
+    );
+  };
 
   onPressCancelAllLocalNotification = () => {
-    localNotify.cancelAllLocalNotification()
-  }
+    localNotify.cancelAllLocalNotification();
+  };
 
   render() {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-
           <Stack.Screen name="Home">
-          {
-            ({navigation}) => {
-              localNotify.setNavegador(navigation)
+            {({navigation}) => {
+              localNotify.setNavegador(navigation);
               return (
-                <Home 
-                MandarNotificacao={this.onPressSendNotification}
-                CancelarNotificacao={this.onPressCancelAllLocalNotification}
+                <Home
+                  MandarNotificacao={this.onPressSendNotification}
+                  CancelarNotificacao={this.onPressCancelAllLocalNotification}
                 />
-              )
-            }
-          }
-        
-            </Stack.Screen>   
+              );
+            }}
+          </Stack.Screen>
 
           <Stack.Screen name="Redirect" component={Redirect} />
         </Stack.Navigator>
