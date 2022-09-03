@@ -5,10 +5,6 @@ import {notificationManager} from '../notification';
 const localNotify = notificationManager;
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let {container, button} = styles;
 
@@ -16,13 +12,13 @@ export default class Home extends Component {
       <View style={container}>
         <TouchableOpacity
           style={button}
-          onPress={() => props.MandarNotificacao}>
+          onPress={() => this.props.MandarNotificacao()}>
           <Text>Enviar notificação</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={button}
-          onPress={() => props.CancelarNotificacao}>
+          onPress={() => this.props.CancelarNotificacao()}>
           <Text>Cancelar notificações</Text>
         </TouchableOpacity>
       </View>
