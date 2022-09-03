@@ -6,15 +6,16 @@ import React, {Component} from 'react'
   import Redirect from './src/Pages/Redirect'
 
   //notificacao
-  import { notificationManager } from '../Notification'
+  import { NotificationManager } from './src/Notification'
   
   //navegacao
-  import {NavigationConteiner} from '@react-navigation/native'
-  import {createStackNavigation} from '@react-navigation/stack'
+   import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack'
+  
 //declaracao de constantes
 
-const localNotify = notificationManager
-const Stack = createStackNavigation();
+const localNotify = NotificationManager;
+const Stack = createStackNavigator();
 
   export default class App extends Component {
     constructor(props) {
@@ -43,11 +44,14 @@ const Stack = createStackNavigation();
     }
 
     render() {
-      <NavigationConteiner>
+      return(
+      <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Pagina princial" component={Home}/>
           <Stack.Screen name="Redirect" component={Redirect}/>
         </Stack.Navigator>
-      </NavigationConteiner>
+      </NavigationContainer>
+      )
+      
     }
   }

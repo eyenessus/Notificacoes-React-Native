@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
   import {View, StyleSheet, TouchableOpacity, Text} from 'react-native'
-  import { notificationManager } from '../Notification'
+  import { NotificationManager } from '../Notification'
 
-  const localNotify = new notificationManager
+  const localNotify = new NotificationManager
   export default class Home extends Component {
    
 

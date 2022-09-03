@@ -83,5 +83,5 @@
 
   }
 
-  export const notificationManager = new Notification();
+  export const NotificationManager = new Notification();
               
