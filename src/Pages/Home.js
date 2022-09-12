@@ -5,19 +5,20 @@ import {notificationManager} from '../notification';
 const localNotify = notificationManager;
 
 export default class Home extends Component {
- 
   render() {
     let {container, button} = styles;
 
     return (
       <View style={container}>
-        <TouchableOpacity style={button} onPress={this.onPressSendNotification}>
+        <TouchableOpacity
+          style={button}
+          onPress={() => this.props.MandarNotificacao()}>
           <Text>Enviar notificação</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={button}
-          onPress={this.onPressCancelAllLocalNotification}>
+          onPress={() => this.props.CancelarNotificacao()}>
           <Text>Cancelar notificações</Text>
         </TouchableOpacity>
       </View>
